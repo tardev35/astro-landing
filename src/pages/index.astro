@@ -1,17 +1,44 @@
 ---
-
+import MainLayout from "../layouts/MainLayout.astro";
+import ContentBox from "./components/ContentBox.astro";
+import Navfoot from "./components/Navfoot.astro";
+import Announcement from "./components/Announcement.astro";
+import SmoothCarousel from "./components/SmoothCarousel.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout title="PIGAUTO99 - สล็อตเว็บตรง">
+  <Announcement />
+  <section class="flex flex-col items-center bg-cover bg-center py-12 text-center">
+    <div class="container mx-auto px-4">
+      <h1 class="mb-2 text-5xl font-extrabold text-white drop-shadow-md">PIGAUTO99</h1>
+      <p class="text-xl font-bold text-yellow-400 drop-shadow-sm">สล็อตเว็บตรง โบนัสแตกง่ายหมูๆ</p>
+    </div>
+  </section>
+
+  <ContentBox title="โครงสร้างระบบของ PIGAUTO ที่เสริมความเป็นเว็บสล็อต">
+    <p class="mb-8 text-gray-200">
+      โครงสร้างระบบของ PIGAUTO ถูกพัฒนาขึ้นเพื่อรองรับงานประมวลผลของ เว็บสล็อต ได้อย่างมีประสิทธิภาพ การจัดสรรทรัพยากรเซิร์ฟเวอร์ที่เหมาะสมและระบบควบคุมคุณภาพที่สม่ำเสมอ
+      ทำให้ผู้เล่นสามารถใช้งานแพลตฟอร์มได้อย่างต่อเนื่อง การออกแบบในลักษณะนี้ช่วยเพิ่มความเสถียรและสร้างมาตรฐานที่สอดคล้องกับความต้องการของผู้ใช้ในปัจจุบัน
+    </p>
+
+    <div class="flex flex-wrap justify-center gap-4">
+      <button class="rounded-lg border border-gray-400 bg-gradient-to-b from-gray-600 to-black px-8 py-3 font-bold text-white transition-transform hover:scale-105">สมัครสมาชิก</button>
+      <button
+        class="rounded-lg border border-yellow-600 bg-gradient-to-b from-yellow-200 to-yellow-500 px-8 py-3 font-extrabold text-black shadow-[0_0_15px_rgba(255,215,0,0.4)] transition-transform hover:scale-105">
+        เข้าเล่นเกม
+      </button>
+      <button class="rounded-lg border border-green-300 bg-gradient-to-b from-green-400 to-green-700 px-8 py-3 font-bold text-white transition-transform hover:scale-105">ติดต่อเรา</button>
+    </div>
+  </ContentBox>
+  <SmoothCarousel />
+
+  <ContentBox>
+    <h2 class="mb-4 text-2xl font-bold">PIGAUTO เว็บสล็อตอันดับ 1 ของวงการ</h2>
+    <p>
+      แพลตฟอร์ม PIGAUTO เว็บสล็อตอันดับ 1 ของวงการ ถูกออกแบบให้ตอบสนองความต้องการของผู้เล่นที่ต้องการระบบเสถียรและมีมาตรฐานสูง การจัดการหลังบ้านได้รับการพัฒนาให้รองรับปริมาณการใช้งานอย่างต่อเนื่อง
+      การควบคุมข้อมูลและกระบวนการตรวจสอบภายในดำเนินการโดยใช้เทคโนโลยีที่ทันสมัย เพื่อให้การเล่นทุกเกมเป็นไปตามหลักการที่ถูกต้องและตรวจสอบได้จริง
+      ส่งผลให้เว็บไซต์มีความพร้อมในการให้บริการในระดับที่เหมาะสมกับการเป็นแพลตฟอร์มอันดับหนึ่งของกลุ่มผู้เล่นในปัจจุบัน
+    </p>
+  </ContentBox>
+</MainLayout>
+<Navfoot />
