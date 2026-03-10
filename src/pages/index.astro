@@ -1,17 +1,28 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import ContentBox from "./components/ContentBox.astro";
+import ContentBoxTwo from "./components/ContentBoxTwo.astro";
+import ContentBoxSevenThree from "./components/ContentBoxSevenThree.astro";
+import ContentBoxThreeColums from "./components/ContentBox3Three.astro";
 import Navfoot from "./components/Navfoot.astro";
 import Announcement from "./components/Announcement.astro";
 import SmoothCarousel from "./components/SmoothCarousel.astro";
+
+import { Image } from "astro:assets";
+import image1 from "../assets/pro1-2.webp";
+import image2 from "../assets/pro2-2.webp";
+import image3 from "../assets/pro4-1.webp";
 ---
 
 <MainLayout title="PIGAUTO99 - สล็อตเว็บตรง">
   <Announcement />
-  <section class="flex flex-col items-center bg-cover bg-center py-12 text-center">
+  <section class="flex flex-col items-center py-12 text-center">
     <div class="container mx-auto px-4">
-      <h1 class="mb-2 text-5xl font-extrabold text-white drop-shadow-md">PIGAUTO99</h1>
-      <p class="text-xl font-bold text-yellow-400 drop-shadow-sm">สล็อตเว็บตรง โบนัสแตกง่ายหมูๆ</p>
+      <h1 class="mb-2 text-5xl text-white">PIGAUTO99</h1>
+      <p class="text-base text-white">
+        โครงสร้างระบบของ PIGAUTO ถูกพัฒนาขึ้นเพื่อรองรับงานประมวลผลของ เว็บสล็อต ได้อย่างมีประสิทธิภาพ การจัดสรรทรัพยากรเซิร์ฟเวอร์ที่เหมาะสมและระบบควบคุมคุณภาพที่สม่ำเสมอ
+        ทำให้ผู้เล่นสามารถใช้งานแพลตฟอร์มได้อย่างต่อเนื่อง การออกแบบในลักษณะนี้ช่วยเพิ่มความเสถียรและสร้างมาตรฐานที่สอดคล้องกับความต้องการของผู้ใช้ในปัจจุบัน
+      </p>
     </div>
   </section>
 
@@ -40,5 +51,100 @@ import SmoothCarousel from "./components/SmoothCarousel.astro";
       ส่งผลให้เว็บไซต์มีความพร้อมในการให้บริการในระดับที่เหมาะสมกับการเป็นแพลตฟอร์มอันดับหนึ่งของกลุ่มผู้เล่นในปัจจุบัน
     </p>
   </ContentBox>
+  <ContentBoxTwo>
+    <div slot="left">
+      <h2 class="text-xl font-semibold">เทคนิคการเล่นสล็อตให้ได้กำไร 2026</h2>
+      <p>
+        ที่ PIGAUTO ทุกคนเริ่มต้นกับ สล็อตเว็บตรง ฝากถอน ไม่มีขั้นต่ำ ฝากกี่บาทก็ได้ ระบบรองรับตั้งแต่ 1 บาท คุณไม่จำเป็นต้องมีทุนมากมายก็สามารถเข้ามาเริ่มต้นกับเว็บตรงของเราได้ตั้งแต่วันนี้
+        ถอนเท่าไหร่ก็ได้ ไม่มีบังคับยอดขั้นต่ำ ระบบออโต้ช่วยให้ทุกขั้นตอนทำได้เองแบบง่าย ๆ คุณสามารถลอง เริ่ม ลงมือ และต่อยอดได้ตามสไตล์ของคุณเอง
+        นี่คือพื้นที่ของผู้เล่นที่ต้องการโอกาสและความยืดหยุ่นอย่างแท้จริง
+      </p>
+    </div>
+    <div slot="right">
+      <h2 class="text-xl font-semibold">โปรโมชั่นประจำเดือน</h2>
+      <p>
+        PIGAUTO พร้อมดูแลคุณทุกขั้นตอนตลอด 24 ชั่วโมง เป็นมิตรกับสำหรับผู้เล่นใหม่ที่อยากเริ่มแต่ยังไม่แน่ใจว่าจะทำขั้นตอนไหนก่อนแนะนำวิธีสมัครและเริ่มต้นเล่นอย่างถูกต้อง แนะนำเกมที่เหมาะกับทุน เช่น
+        เกมแตกง่าย หรือเกมที่คนเล่นเยอะตอนนี้ ช่วยให้ผู้เล่นตัดสินใจง่ายขึ้น ติดตามปัญหายาก ๆ เช่น บัคเกม หรือยอดไม่ปรับ ทีมงานสามารถส่งเรื่องเข้าระบบของค่ายเกมโดยตรง ทำให้แก้ไขได้เร็วกว่าเว็บทั่วไป
+      </p>
+    </div>
+  </ContentBoxTwo>
+  <ContentBoxSevenThree>
+    <div slot="left">
+      <h3 class="text-xl font-semibold">ความโดดเด่นของ PIGAUTO ที่ยืนหนึ่งในวงการ</h3>
+      <p>
+        ความโดดเด่นของ PIGAUTO ในฐานะผู้ให้บริการที่ยืนอยู่ในระดับแนวหน้า ได้รับการยอมรับว่าเป็นเว็บสล็อตที่สอดคล้องกับมาตรฐานของ วงการ เกมออนไลน์
+        แพลตฟอร์มมีระบบควบคุมคุณภาพที่ต่อเนื่องและตรวจสอบได้จริง ไฮไลท์ของเว็บสล็อตหมู PIGAUTO คือความใจป๋าครับ! เกมสล็อตแท้ล้วนเป็นเกมที่มีค่าความผันผวน (Volatility) เหมาะสม ทำให้ โบนัสแตกดุเดือด
+        สูงที่สุด แบบที่คุณคาดไม่ถึง บทจะมาก็มาเป็นพายุ ทั้ง Big Win, Mega Win หรือฟีเจอร์ฟรีสปินที่เข้าง่ายจนน่าตกใจ เราไม่มีนโยบายล็อกยูสเซอร์ ความเฮงที่ PIGAUTO เกมแท้แตกง่าย
+        เกิดขึ้นอย่างเป็นธรรมชาติและยุติธรรมที่สุด เตรียมถุงใบใหญ่ๆ มารอรับเงินได้เลย เพราะเมื่อไหร่ที่แจ็คพอตแตก มันจะไหลมาเทมาเหมือนกระปุกออมสินระเบิดเลยล่ะครับ!
+      </p>
+    </div>
+    <div slot="right">
+      <div class="rounded-xl bg-white/10 p-5">
+        <h3 class="font-bold text-white">แถบด้านข้าง (30%)</h3>
+        <p class="text-white/80">ตรงนี้เหมาะสำหรับใส่รูป แบนเนอร์ หรือปุ่มสมัครสมาชิก...</p>
+        <Image
+          src={image1}
+          alt="Pigauto"
+          loading="lazy"
+          fetchpriority="low"
+          widths={[200, 400, 600]}
+          sizes="(max-width: 768px) 100vw, 33vw"
+          class="mx-auto h-auto w-full max-w-[400px] object-contain shadow-xl"
+          decoding="async"
+          format="avif"
+        />
+      </div>
+    </div>
+  </ContentBoxSevenThree>
+  <ContentBoxThreeColums>
+    <div slot="left" class="rounded-xl bg-white/10 p-5">
+      <div class="rounded-xl bg-white/10 p-5">
+        <p class="text-white/80">ตรงนี้เหมาะสำหรับใส่รูป แบนเนอร์ หรือปุ่มสมัครสมาชิก...</p>
+        <Image
+          src={image1}
+          alt="Pigauto"
+          loading="lazy"
+          fetchpriority="low"
+          widths={[200, 400, 600]}
+          sizes="(max-width: 768px) 100vw, 33vw"
+          class="mx-auto h-auto w-full max-w-[400px] object-contain shadow-xl"
+          decoding="async"
+          format="avif"
+        />
+      </div>
+    </div>
+    <div slot="center" class="rounded-xl bg-white/10 p-5">
+      <div class="rounded-xl bg-white/10 p-5">
+        <p class="text-white/80">ตรงนี้เหมาะสำหรับใส่รูป แบนเนอร์ หรือปุ่มสมัครสมาชิก...</p>
+        <Image
+          src={image2}
+          alt="Pigauto"
+          loading="lazy"
+          fetchpriority="low"
+          widths={[200, 400, 600]}
+          sizes="(max-width: 768px) 100vw, 33vw"
+          class="mx-auto h-auto w-full max-w-[400px] object-contain shadow-xl"
+          decoding="async"
+          format="avif"
+        />
+      </div>
+    </div>
+    <div slot="right" class="rounded-xl bg-white/10 p-5">
+      <div class="rounded-xl bg-white/10 p-5">
+        <p class="text-white/80">ตรงนี้เหมาะสำหรับใส่รูป แบนเนอร์ หรือปุ่มสมัครสมาชิก...</p>
+        <Image
+          src={image3}
+          alt="Pigauto"
+          loading="lazy"
+          fetchpriority="low"
+          widths={[200, 400, 600]}
+          sizes="(max-width: 768px) 100vw, 33vw"
+          class="mx-auto h-auto w-full max-w-[400px] object-contain shadow-xl"
+          decoding="async"
+          format="avif"
+        />
+      </div>
+    </div>
+  </ContentBoxThreeColums>
 </MainLayout>
 <Navfoot />

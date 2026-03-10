@@ -1,5 +1,5 @@
 ---
-const { title, subtitle } = Astro.props;
+const { title } = Astro.props;
 ---
 
 <section class="flex justify-center p-2">
@@ -7,7 +7,7 @@ const { title, subtitle } = Astro.props;
     <div
       class="w-full max-w-7xl rounded-[15px] border-2 border-[#d4af37] bg-[#8B0000]/90 p-8 text-center shadow-2xl"
       style="box-shadow: 0 0 14px rgba(212, 175, 55, 0.65), inset 0 0 12px rgba(212, 175, 55, 0.35)">
-      {title && <h1 class="mb-4 text-3xl font-bold">{title}</h1>}
+      {title && <h2 class="mb-4 text-3xl font-bold">{title}</h2>}
 
       <div class="text-white">
         <slot />

@@ -16,6 +16,7 @@ const { title } = Astro.props;
 
     <link rel="preload" href="/fonts/kanit-v17-latin_thai-regular.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/kanit-v17-latin_thai-700.woff2" as="font" type="font/woff2" crossorigin />
+
     <style is:global>
       body {
         background-size: cover;
@@ -31,7 +32,18 @@ const { title } = Astro.props;
     </style>
   </head>
 
-  <body class="h-screen w-full bg-cover bg-center" style={`background-image: url(${Bg.src});`}>
+  <body class="relative min-h-screen w-full">
+    <Image
+      src={Bg}
+      alt="Website Background"
+      loading="eager"
+      widths={[412, 768, 1024, 1900]}
+      sizes="100vw"
+      format="avif"
+      class="fixed inset-0 -z-50 h-full w-full object-cover"
+      quality="low"
+      decoding="sync"
+    />
     <Navbar />
     <div class="mb-2.5 flex w-full flex-1 items-center justify-center">
       <Image
@@ -40,7 +52,7 @@ const { title } = Astro.props;
         loading="eager"
         fetchpriority="high"
         widths={[360, 412, 768, 824, 1024, 1900]}
-        sizes="(max-width: 600px) 412px,(max-width: 1900px) 100vw, 1900px"
+        sizes="(max-width: 412px) 412px, (max-width: 768px) 824px, 1900px"
         class="mx-auto h-auto w-full max-w-[1900px] object-contain shadow-xl"
         decoding="sync"
         format="avif"
