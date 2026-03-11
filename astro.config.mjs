@@ -11,4 +11,10 @@ export default defineConfig({
   build: {
     inlineStylesheets: 'always', 
   },
+  redirects: {
+    '/signin': 'https://tinyurl.com/SFpat', 
+    '/signup': 'https://tinyurl.com/SFpat',
+    
+    '/line': 'https://tinyurl.com/linesiam',
+  }
 });
