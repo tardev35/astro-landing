@@ -5,7 +5,12 @@ import Bg from "../assets/PIGAUTO-BG.webp";
 import "../styles/global.css";
 import Navbar from ".././pages/components/Navbar.astro";
 
-const { title = "PIGAUTO99 | เว็บสล็อตอันดับ 1 ของวงการ", description = "PIGAUTO99 เว็บสล็อตเว็บตรง ระบบออโต้ ฝากถอนไม่มีขั้นต่ำ ปลอดภัย 100%", ImageOg = "/pro1-2.webp" } = Astro.props;
+const {
+  title = "PIGAUTO99 | เว็บสล็อตอันดับ 1 ของวงการ",
+  description = "PIGAUTO99 เว็บสล็อตเว็บตรง ระบบออโต้ ฝากถอนไม่มีขั้นต่ำ ปลอดภัย 100%",
+  robots = "index, follow",
+  ImageOg = "/pro1-2.webp",
+} = Astro.props;
 
 const currentPath = Astro.url.pathname;
 const canonicalURL = new URL(currentPath, Astro.site);
@@ -15,6 +20,8 @@ const ogImageURL = new URL(ImageOg, Astro.site);
 <html lang="th">
   <head>
     <meta charset="utf-8" />
+    <meta name="robots" content={robots} />
+    <meta name="googlebot" content={robots} />
     <title>{title}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
