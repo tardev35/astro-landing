@@ -86,11 +86,12 @@ const ogImageURL = new URL(ImageOg, Astro.site);
         alt="Pigauto"
         loading="eager"
         fetchpriority="high"
-        widths={[360, 412, 768, 824, 1024, 1900]}
-        sizes="(max-width: 412px) 412px, (max-width: 768px) 824px, 1900px"
+        widths={[360, 412, 480, 768, 1024, 1900]}
+        sizes="(max-width: 1900px) 100vw, 1900px"
         class="mx-auto h-auto w-full max-w-[1900px] object-contain shadow-xl"
-        decoding="sync"
+        decoding="async"
         format="avif"
+        quality={80}
       />
     </div>
     <slot />
