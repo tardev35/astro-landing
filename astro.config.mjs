@@ -16,5 +16,6 @@ export default defineConfig({
     '/signup': 'https://tinyurl.com/SFpat',
     
     '/line': 'https://tinyurl.com/linesiam',
-  }
+  },
+  site: 'https://pigauto999.info'
 });
