@@ -82,7 +82,7 @@ const ogImageURL = new URL(ImageOg, Astro.site);
       decoding="sync"
     />
     <Navbar />
-    <!-- <div class="mb-2.5 flex w-full flex-1 items-center justify-center">
+    <div class="mb-2.5 flex w-full flex-1 items-center justify-center">
       <Image
         src={mainBanner}
         alt="Pigauto"
@@ -91,11 +91,11 @@ const ogImageURL = new URL(ImageOg, Astro.site);
         widths={[412, 768, 1900]}
         sizes="(max-width: 768px) 412px, 100vw"
         class="mx-auto h-auto w-full max-w-[1900px] object-contain shadow-xl"
-        decoding="async"
+        decoding="sync"
         format="avif"
         quality={60}
       />
-    </div> -->
+    </div>
     <slot />
   </body>
 </html>
