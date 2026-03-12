@@ -89,11 +89,11 @@ const ogImageURL = new URL(ImageOg, Astro.site);
         loading="eager"
         fetchpriority="high"
         widths={[360, 412, 480, 768, 1024, 1900]}
-        sizes="(max-width: 1900px) 100vw, 1900px"
+        sizes="(max-width: 768px) 480px, 100vw"
         class="mx-auto h-auto w-full max-w-[1900px] object-contain shadow-xl"
-        decoding="sync"
+        decoding="async"
         format="avif"
-        quality={80}
+        quality={60}
       />
     </div>
     <slot />
