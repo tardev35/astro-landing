@@ -77,7 +77,32 @@ const displayImages = [...images, ...images, ...images];
   });
 </script>
 <style>
+  /* 1. Animation ตั้งต้นของ Swiper */
   .swiper-wrapper {
     transition-timing-function: linear !important;
+  }
+
+  /* 🌟 2. โค้ดพระเอก! จัดหน้าตาตอนที่ Swiper JS ยังโหลดไม่เสร็จ 🌟 */
+  .swiper:not(.swiper-initialized) .swiper-wrapper {
+    display: flex;
+    overflow: hidden;
+    gap: 12px; /* ระยะห่างสำหรับมือถือ */
+  }
+
+  /* บังคับให้มือถือโชว์ 2 รูป (เหมือน slidesPerView: 2) */
+  .swiper:not(.swiper-initialized) .swiper-slide {
+    flex: 0 0 calc((100% - 12px) / 2);
+    width: calc((100% - 12px) / 2);
+  }
+
+  /* บังคับให้ Desktop โชว์ 3 รูป (เหมือน slidesPerView: 3) */
+  @media (min-width: 768px) {
+    .swiper:not(.swiper-initialized) .swiper-wrapper {
+      gap: 16px; /* ระยะห่างสำหรับ Desktop */
+    }
+    .swiper:not(.swiper-initialized) .swiper-slide {
+      flex: 0 0 calc((100% - 32px) / 3); /* ลบด้วย (16px * 2 ช่องว่าง) */
+      width: calc((100% - 32px) / 3);
+    }
   }
 </style>
