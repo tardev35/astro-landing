@@ -89,7 +89,7 @@ const ogImageURL = new URL(ImageOg, Astro.site);
         widths={[360, 412, 480, 768, 1024, 1900]}
         sizes="(max-width: 1900px) 100vw, 1900px"
         class="mx-auto h-auto w-full max-w-[1900px] object-contain shadow-xl"
-        decoding="async"
+        decoding="sync"
         format="avif"
         quality={80}
       />
